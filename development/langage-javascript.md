@@ -58,8 +58,8 @@ Description :
 - description : site d'entre-aide de développeurs
 
 
-- lien : https://grafikart.fr/formations/debuter-javascript et https://grafikart.fr/formations/react
-- description : série de vidéos tuto sur javascript et sur react
+- lien : https://grafikart.fr/formations/debuter-javascript
+- description : série de vidéos tuto sur javascript
 
 ## 🚧 Je franchis les obstacles
 
