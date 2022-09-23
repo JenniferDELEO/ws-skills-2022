@@ -6,41 +6,56 @@
 
 ## 🎓 J'ai compris et je peux expliquer
 
-- les `structures` de base du langage ❌ / ✔️
-- les normes `ecmascript` ❌ / ✔️
-- l'utilisation de l'`asynchrone` ❌ / ✔️
-- les spécifités du mot-clef `this` ❌ / ✔️
+- les `structures` de base du langage ✔️ : élément script dans un fichier HTML ou fichier à part appelé dans le fichier HTML. Utilisé souvent pour manipuler le DOM
+- les normes `ecmascript` ✔️ : le nommage des variables (let et const au lieu de var), les templates string (``), les "arrow-function"...
+- l'utilisation de l'`asynchrone` ✔️ : le système des Promises pour obtenir une réponse future à une requête à l'aide de async/await avec try{} catch {} ou .then().catch()
+- les spécifités du mot-clef `this` ❌
 
 ## 💻 Je code en Javascript
 
 ### Un exemple de code commenté ❌ / ✔️
 
 ```javascript
-(e) => mc2;
+const promptFunction = () => {
+    let text;
+    let date = prompt("Écrivez une année", "2018");
+    if (date === null || date === "") {
+      text = "Autre";
+      setFilterCreationDate(filterCreationDate.filter((a) => a !== date));
+    } else {
+      text = "Autre : " + date;
+    }
+    document.getElementById("otherDate").innerHTML = text;
+    filterCreationDate.includes(date)
+      ? setFilterCreationDate(filterCreationDate.filter((a) => a !== date))
+      : setFilterCreationDate((prevState) => {
+          return [...prevState, date];
+        });
+  };
 ```
 
-### Utilisation dans un projet ❌ / ✔️
+### Utilisation dans un projet ✔️
 
-[lien github](...)
+[lien github](https://github.com/JenniferDELEO/Betaseries-clone)
 
-Description :
+Description : un clone du site betaséries (site de gestion de séries et films) avec l'utilisation de leur API en react (site commencé avant la rentrée et loin d'être fini)
 
-### J'ai utilisé ce langage en production ❌ / ✔️
+### J'ai utilisé ce langage en production ✔️
 
-[lien du projet](...)
+[lien du projet](https://github.com/Plinn/monoceros_mobile)
 
-Description :
+Description : projet 3 de la formation dev et dev mobile en 5 mois de WCS : suivi des colis en temps réels avec plusieurs paramètres étudiés comme les chocs, la température, l'humidité...
 
-### J'ai utilisé ce langage en environement professionnel ❌ / ✔️
+### J'ai utilisé ce langage en environement professionnel ❌
 
 Description :
 
 ## 🌐 J'utilise des ressources
 
-### Titre
+### Titre : StackOverflow
 
-- lien
-- description
+- lien : https://stackoverflow.com/
+- description : site d'entre-aide de développeurs
 
 ## 🚧 Je franchis les obstacles
 
@@ -58,6 +73,6 @@ Résolution :
 
 ## 📽️ J'en fais la démonstration
 
-- J'ai ecrit un [tutoriel](...) ❌ / ✔️
-- J'ai fait une [présentation](...) ❌ / ✔️
+- J'ai ecrit un [tutoriel](...) ❌
+- J'ai fait une [présentation](...) ❌
 
